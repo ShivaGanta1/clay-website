@@ -1,0 +1,186 @@
+
+
+.footer-container{
+    padding-left: 4rem;
+    padding-right: 6rem;
+    padding-top: 4rem;
+}
+.footer-heading h1{
+    font-size: 5rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+.footer-heading p{
+    font-size: 2rem;
+    margin-top: 0rem;
+    padding-bottom: 4rem;
+}
+
+
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-pages{
+    display: flex;  
+    gap: 6rem;
+    justify-content: space-between;
+}
+.footer-pages2{
+    padding-right: 4rem;
+}
+.footer-pages p{
+    font-size: 1.2rem;
+}
+.privacy{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(123, 124, 125);
+}
+.privacy1{
+    display: flex;
+   gap: 2rem;
+}
+.copyright{
+    padding-right: 4rem;
+}
+.privacy1 p{
+    font-size: 1rem;
+}
+.location-address a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+.location-section{
+    display: flex;
+    justify-content: space-between;
+}
+.location-logos{
+    /* padding-right: 4rem; */
+    
+}
+.location-logos span{
+    padding: 0rem 1rem;;
+}
+.footer-container hr {
+    border: none;
+    border-top: 2px solid rgb(186, 195, 209); 
+    transition: border-color 0.3s ease;
+}
+
+
+.footer-heading p:hover hr {
+    border-color: black;
+}
+.location-address p:hover hr {
+    border-color: black; 
+}
+.work:hover hr {
+    border-color: black; 
+}
+.clients:hover hr {
+    border-color: black; 
+}
+.services:hover hr {
+    border-color: black; 
+}
+.about:hover hr {
+    border-color: black; 
+}
+.blog:hover hr {
+    border-color: black; 
+}
+.contact:hover hr {
+    border-color: black; 
+}
+.privacy2:hover hr {
+    border-color: black; 
+}
+.term:hover hr {
+    border-color: black; 
+}
+.sitemap:hover hr {
+    border-color: black; 
+}
+svg:hover  {
+   color: rgb(126, 130, 133);
+}
+
+
+@media (max-width:768px){
+    .footer-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 4rem;
+    }
+    .footer-heading h1{
+        font-size: 2.8rem;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+    .footer-heading p{
+        font-size: 1.2rem;
+        margin-top: 0rem;
+    }
+}
+
+
+@media (max-width:480px){
+    .footer-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 4rem;
+    }
+    .footer-heading h1{
+        font-size: 2.4rem;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+    .footer-heading p{
+        font-size: 1.2rem;
+        margin-top: 0rem;
+    }
+    
+    
+    .footer-section{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .footer-pages{
+        display: flex;  
+        gap: 6rem;
+        justify-content: space-between;
+    }
+    .footer-pages2{
+        padding-right: 4rem;
+    }
+    .footer-pages p{
+        font-size: 1.2rem;
+    }
+    .privacy{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .location-address a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+
+    }
+    .location-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+    .location-logos{
+        /* padding-right: 4rem; */
+        
+    }
+    .location-logos span{
+        padding: 0rem 0.7rem;;
+    }
+}

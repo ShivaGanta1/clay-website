@@ -1,0 +1,56 @@
+
+
+.companies-container{
+    margin-left: 4rem;
+    margin-right: 6rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+.company-head{
+    font-size: 3.5rem;
+    width: 60%;
+}
+.company-para{
+    font-size: 2rem;
+    width: 50%;
+}
+
+.company-hr{
+    width: 160px; 
+    height: 1px; 
+    background-color: rgb(139, 142, 146);
+    border: none; 
+    margin: 0%;
+    
+}
+.company-section{
+    font-size: 1.3rem;
+}
+
+@media (max-width:1024px) {
+    .company-head{
+        font-size: 2.7rem;
+        width: 70%;
+    }
+    .company-para{
+        font-size: 1.2rem;
+        width: 70%;
+    }
+}
+
+@media (max-width:480px) {
+    .companies-container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+    }
+    .company-head{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .company-para{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+}

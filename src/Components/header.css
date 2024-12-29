@@ -1,0 +1,268 @@
+.Header {
+  padding-left: 2rem;
+  padding-right: 3rem;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+ 
+  
+}
+
+.Header.hidden {
+  transform: translateY(-100%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  color: rgb(0, 0, 0);
+}
+
+.navbar-logo img {
+  height: 38px;
+}
+
+.first-img {
+  padding-right: 10px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 50px !important;
+  margin: 0;
+  padding: 0;
+  padding-right: 2rem;
+  z-index: 1000;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  
+  cursor: pointer;
+  margin-right: 1.5rem;
+  /* padding: 0px 10px; */
+  z-index: 1000;
+}
+
+.navbar-toggle.active .bar:nth-child(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+
+/* .navbar-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+} */
+
+.navbar-toggle.active .bar:nth-child(2) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.navbar-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #333;
+  transition: transform 0.3s ease-in-out;
+  transition-delay: 0s, 0s, .22s;
+}
+
+
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo a {
+  display: inline-block;
+  margin: 0;
+  padding-right: 10px;
+  line-height: 0;
+}
+
+.navbar-logo img {
+  display: block;
+  height: 37px;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #878b8b;
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* Responsive Design */
+
+@media (max-width: 430px) {
+  .Header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    /* background-color: #141414;  */
+  }
+
+  .navbar-logo img {
+    height: 40px;
+  }
+
+  .navbar-links {
+    display: none; 
+  }
+  .navbar-links.active {
+    display: flex; 
+    align-items: flex-start;
+    flex-direction: column; 
+    position: absolute; 
+    top: 100px; 
+    right: 0; 
+    color: white;
+    background-color: #141414; 
+    padding: 20px; 
+    border-radius: 0px; 
+    width: 24.5rem;
+    
+  }
+  .navbar-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .Header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+  }
+
+  .navbar-logo img {
+    height: 40px;
+  }
+
+  .navbar-links {
+    display: none; 
+  }
+  .navbar-links.active {
+    display: flex; 
+    align-items: flex-start;
+    flex-direction: column; 
+    position: absolute; 
+    top: 100px; 
+    right: 0; 
+    color: white;
+    background-color: #141414; 
+    padding: 20px; 
+    border-radius: 0px; 
+    width: 21rem;
+    
+  }
+  .navbar-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 320px) {
+  .Header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+  }
+
+  .navbar-logo img {
+    height: 40px;
+  }
+
+  .navbar-links {
+    display: none; 
+  }
+  .navbar-links.active {
+    display: flex; 
+    align-items: flex-start;
+    flex-direction: column; 
+    position: absolute; 
+    top: 100px; 
+    right: 0; 
+    color: white;
+    background-color: #141414; 
+    padding: 20px; 
+    border-radius: 0px; 
+    width: 18rem;
+    
+  }
+  .navbar-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+
+
+@media (min-width: 500px) and (max-width: 1445px) {
+  .Header {
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+  }
+
+  .navbar-logo img {
+    height: 38px;
+  }
+
+  .navbar-links {
+    gap: 30px !important;
+    padding-right: 2rem;
+  }
+}

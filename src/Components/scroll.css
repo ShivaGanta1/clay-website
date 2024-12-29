@@ -1,0 +1,23 @@
+.gallery-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    cursor:pointer;
+    height: auto; 
+    scrollbar-width: none;
+  }
+  
+  .gallery-container img {
+    margin: 0 30px; 
+    object-fit: contain;
+    transition: transform 0.2s ease;
+  }
+  
+  .gallery-container.left {
+    cursor: url("icons8-left-arrow-48.png"), auto;
+  }
+  
+  .gallery-container.right {
+    cursor: url("icons8-right-arrow-48.png"), auto; 
+  }
+  

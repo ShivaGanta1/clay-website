@@ -1,0 +1,237 @@
+.feature-container {
+    padding-left: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: 6rem;
+    background-color: rgb(23, 25, 31);
+    color: white;
+}
+
+.feature-heading {
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.feature-section {
+    display: flex;
+    gap: 5rem;
+    padding-top: 2rem;
+
+
+}
+
+.feature-img {
+    width: 42%;
+}
+
+.feature-img img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-matter {
+    font-size: 1.5rem;
+
+}
+
+.feature-head {
+    font-size: 2.5rem;
+}
+
+.feature-text {
+    padding-top: 2.5rem;
+    font-size: 1rem;
+}
+
+.feature-text1 {
+
+    font-size: 1rem;
+}
+
+.feature-img img:hover {
+
+    transform: scale(1.03);
+    overflow: hidden;
+}
+
+.feature-img1 {
+    width: 60%;
+}
+
+.feature-img1 img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-img2 {
+    width: 50%;
+}
+
+.feature-img2 img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-img1 img:hover {
+
+    transform: scale(1.03);
+    overflow: hidden;
+}
+
+.feature-img2 img:hover {
+
+    transform: scale(1.03);
+    overflow: hidden;
+}
+
+.feature-container hr {
+    background-color: rgb(94, 94, 96);
+    height: 1px;
+    border: none;
+}
+
+.client-section1 {
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 4rem;
+    color: rgb(255, 255, 255);
+}
+
+.client-achor1 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.client-arrow1 {
+    padding-left: 10px;
+    font-size: 1.9rem;
+    color: rgb(188, 194, 209);
+
+}
+
+/* .client-arrow1:hover {
+    color: rgb(255, 249, 249);
+    padding-left: 15px;
+} */
+.client-achor1:hover ~ .client-arrow1{
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+}
+
+.client-hr1 {
+    width: 10%;
+    background-color: rgb(226, 235, 255);
+    height: 1px;
+
+
+}
+
+hr {
+    /* border: 1px solid #ccc; */
+    transition: background-color 0.3s ease;
+}
+
+.client-achor1:hover~hr {
+    background-color: #ffffff;
+}
+
+
+@media  (min-width:1900px) and (max-width:2560px) {
+    .feature-img {
+        width: 48%;
+    }
+
+    .feature-img img {
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+@media  (min-width:940px) and (max-width:1200px) {
+    .feature-matter {
+        font-size: 1rem;
+
+    }
+    .feature-img {
+        width: 38%;
+    }
+
+    .feature-head {
+        font-size: 1.5rem;
+    }
+    .feature-heading {
+        padding-bottom: 2rem;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width:900px) {
+    .feature-container {
+        padding-left: 1rem;
+        padding-top: 4rem;
+        padding-right: 1rem;
+        background-color: rgb(23, 25, 31);
+        color: white;
+    }
+    
+
+    .feature-heading {
+        padding-bottom: 2rem;
+        font-size: 1rem;
+    }
+
+    .feature-section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 2rem;
+
+    }
+
+    .feature-img {
+        width: 100%;
+    }
+
+    .feature-img img {
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .feature-matter {
+        font-size: 1.5rem;
+
+    }
+
+    .feature-head {
+        font-size: 1.5rem;
+    }
+
+    .feature-text {
+        padding-top: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .feature-text1 {
+
+        font-size: 1rem;
+    }
+
+    .feature-img1 {
+        width: 100%;
+    }
+
+    .feature-img1 img {
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .feature-img2 {
+        width: 100%;
+    }
+
+    .feature-img2 img {
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+}
